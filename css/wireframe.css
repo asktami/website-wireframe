@@ -1,0 +1,421 @@
+
+/*  import Google Fonts  */
+@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro:300|Merriweather:400,700|Merriweather+Sans'); 
+ 
+/*
+----------------------------------------------------------------
+	=Base
+---------------------------------------------------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+
+/* add so height scroller bar appears on all pages */
+html, body{
+	height: 100%;
+	margin: 0 0 1px;
+	padding: 0;
+}
+
+body{
+	font-family: Merriweather, Verdana, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 23px;
+	color: #222;
+	background: #fff;
+	}
+
+/*
+----------------------------------------------------------------
+	=Links
+---------------------------------------------------------------- */
+
+a:link, a:visited{
+	color: #999;
+	text-decoration: none;
+	font-weight: normal;
+	text-decoration: underline dotted #999;
+	}
+a:hover, a:focus{
+	color: #aaa;
+	text-decoration: underline;
+}
+
+/*
+----------------------------------------------------------------
+	=Logo
+---------------------------------------------------------------- */
+
+#logo{
+	float: left;
+	padding-right: 10px;
+	display: inline;
+	}
+
+	
+#header a.logo {
+	font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 30px;
+	line-height: 42px;
+	font-weight: normal;
+	letter-spacing:-1px;
+    text-decoration: none;
+    display: inline;
+    float: left;
+	padding: 20px 0px 0px 0px;  /* top right bottom left */
+	margin-bottom: 20px;
+}
+	
+/*
+----------------------------------------------------------------
+	=Header / =Nav
+---------------------------------------------------------------- 
+*/
+
+#header {
+    font-family: Verdana, sans-serif;
+    background: #000;
+	padding: 20px 0px 0px 0px;  /* top right bottom left */
+	margin-bottom: 20px;
+}
+
+#slogan{
+	color: #fff;
+	font-size: 13px;
+	display: inline;
+	float: right;
+	height: 80px;
+	text-align: center;
+	}
+/* *********** media queries *********** */
+/* widest width */
+@media all and (min-width: 768px) {
+	#slogan{
+	height: 100px;
+	}
+}
+
+a.search-link{
+	color: #fff;
+	text-decoration: underline;
+	}
+
+a.phone-number {
+	color: #fff;
+    text-decoration: none;
+}
+
+/* style telephone numbers for iOS */
+a[href^=tel]{
+    color:#fff;
+    text-decoration: none;
+    font-size:inherit;
+    font-style:inherit;
+    font-weight:inherit;
+    }
+
+
+/* mobile first, smallest width */
+#navigation  {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#navigation ul {
+	margin-left: -10px;
+  }
+  
+#navigation li {
+	list-style: none;
+		 }
+
+#navigation a {
+	display: block;
+	padding: 10px 1.5em;
+	text-align: center;
+	font-size: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #fff;
+	background: #444;
+	border-top: 1px solid #333;
+}
+
+#navigation li a:hover, 
+#navigation li.current a,
+#navigation li.current a:hover {
+	background: #fff;
+	color: #444;
+}
+
+
+/* *********** media queries *********** */
+/* widest width */
+@media all and (min-width: 768px) {
+	 #navigation {
+	 	display: inline;
+	 }
+	 #navigation ul {
+  		display: inline;
+	}
+	#navigation li {
+		 margin-left: 0;
+		 margin-right: 2px;
+		 float: left;
+	 }
+	#navigation a {
+	float: left;
+	} 
+	#navigation li.extra { 
+	float: right;
+	}
+	h1
+	{
+	font-size: 50px;
+	}
+	#header a.logo {
+	font-size: 48px;
+	line-height: 1.3;
+	}
+}
+
+/* added b/c in IE nav tabs don't show, so sitelinks are repeated on home page */
+#sitelinks{
+	padding-top: 30px;
+    list-style-type: none;
+}
+#sitelinks li{
+	margin-left:0;
+    float: left;
+    padding-left: 12px;
+    font-size: 12px;
+}
+	
+/*
+----------------------------------------------------------------
+	=Content
+---------------------------------------------------------------- */
+
+#footer{
+	background: #fff;
+	font-size: smaller;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
+
+/*
+----------------------------------------------------------------
+	=Portfolio Picts
+---------------------------------------------------------------- */
+#portfolio{
+	
+}
+#portfolio {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+#portfolio div{
+padding: 5px;
+width: 200px;
+}
+
+#portfolio img{
+width: 200px;
+height: 200px;
+margin-bottom: 5px;
+border: thin silver solid;
+}
+
+#portfolio a, #portfolio a img{
+text-decoration: underline;
+}
+
+	
+/*  blockquote */
+blockquote{
+	margin: 10px 10px 20px 10px;		/* top right bottom left */
+	padding: 20px 20px 20px 20px;		 /* top right bottom left */
+	font-size: 13px;
+	line-height: 14px;
+}
+#content blockquote{
+	font-size: 15px;
+	line-height: 23px;
+	margin: 20px 0px 20px 0px;
+	line-height: 22px;
+	border: 1px solid #ccc; 
+	background: #fff;
+	}
+
+/* testimonials */
+
+#leftcol blockquote{
+	font-family: "Source Sans Pro", Merriweather, Georgia, serif;
+	font-style:italic;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+#leftcol blockquote#right{
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+}
+
+/* *********** media queries *********** */
+/* widest width */
+@media all and (min-width: 768px) {
+	#leftcol blockquote#right{
+	border-top: 0;
+	border-right: 1px solid #000;
+	border-bottom: 0;
+	border-left: 0;
+	}
+}
+
+#servicelist ul{
+	list-style-type: disc;
+}
+#servicelist ul li{
+	margin-left: 20px;
+	padding-top: 4px;
+	font-size: 12px;
+	line-height: 15px;
+	color: #222;
+}
+	
+/*
+----------------------------------------------------------------
+	=Headings
+---------------------------------------------------------------- */
+h1
+{
+	font-family: Merriweather, Georgia, serif;
+	color: #222;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 42px;
+	}
+
+h2
+{
+	font-family: Merriweather, Georgia, serif;
+	color: #444;
+	font-size: 24px;
+	line-height: 36px;
+	margin: 25px 0;
+	font-weight: normal;
+	clear: both;
+}
+
+h3
+{
+	color: #cc0000;
+	font-size: 22px;
+	margin: 22px 0;
+	font-weight: normal;
+	letter-spacing:-1px;
+	line-height: normal;
+}
+
+h4
+{
+	font-size: 18px;
+	color: #000;
+}
+
+h5
+{
+	font-size: 17px;
+}
+
+h6
+{
+	font-size: 15px;
+	letter-spacing: -1px;
+}
+
+/*
+----------------------------------------------------------------
+	=Spacing
+---------------------------------------------------------------- */
+
+ol
+{
+	list-style-type: decimal;
+}
+
+ol.latin{
+	list-style-type: lower-latin;
+	padding-bottom: 0px;
+}
+ol.latin li
+{
+	margin-left: 20px;
+}
+
+ul
+{
+	list-style-type: square;
+}
+
+ul.disc
+{
+	list-style-type: disc;
+}
+
+ul.dash
+{
+	list-style-type: none;
+	margin-bottom: 0px;
+}
+ul.dash li
+{
+	margin-left: 0px;
+}
+
+li
+{
+	margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+address,
+fieldset,
+blockquote
+{
+	margin-bottom: 20px;
+}
+
+small {
+	font-size: 10px;
+	line-height: 100%;
+}
+
+/* ulH = ul Header */
+.ulH {
+	font: 300 20px "Source Sans Pro", Helvetica, sans-serif;
+	margin: 0 0 10px;
+	color: #000;
+}
