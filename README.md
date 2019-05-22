@@ -1,2 +1,2 @@
 # website-wireframe
-[Wireframe](https://asktami.github.io/website-wireframe/)
+[View Site](https://asktami.github.io/website-wireframe/)
